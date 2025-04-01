@@ -5,18 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="Icon" href="./assets/imgs/Favicon.ico">
-    <title>Document</title>
+
+    <!--------- Google Fonts----------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--------- /Google Fonts----------->
+
+     <!--------- Scripts de JS ----------->
+    <script src="./assets/script/script.js" defer></script>
+     <!--------- /Scripts de JS ---------->
+
+    <title>ResolveIt</title>
 </head>
 <body>
 
-    <header>
+    <header id="header">
         <div class="container">
-            <div class="logo">
-                <a href="./index.html">
-                    <img src="./assets/imgs/fullLogoWhite.png" alt="Logo">
-                </a>
-            </div>
-            <nav class="menu-desktop">
+            
+            <section class="logo">
+              <a href="./index.html">
+                <img class="logo-white" src="./assets/imgs/fullLogoWhite.png" alt="Logo ResolveIt">
+                <img class="logo-green" src="./assets/imgs/fullLogoGreen.png" alt="Logo ResolveIt">
+            </a>
+            </section>
+
+            <section class="menu-desktop">
+              <nav >
                 <ul>
                     <li class="nav-itens">
                       <a class="nav-link" href="#">Pessoa Física</a>
@@ -28,29 +43,31 @@
                       <a class="nav-link" href="#">Cotações</a>
                     </li>
                 </ul>
-            </nav>
+              </nav>
+            </section>
+
+            <section class="btn-contact">
+                <a href="#">
+                  <button>Contato</button>
+                </a>
+            </section>
+           
         </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="hero__container">
-          
-          <h3 class="hero__title">Manutenção inteligente para um mundo conectado.</h3>
-          <span class="hero_subtitle">Sistema para abertura e
-            gerenciamento de chamados
-            ResolveIt é um sistema inteligente e completo para
-            gerenciamento de abertura de chamados com acompanhamento em tempo real.
-                        
-            </span>
-          <div class="btn_container">
-            <button class="btn-contact">
-              contate-nos
-            </button>
-            <button class="btn-moreInfo">
-              Saiba mais
-            </button>
+      <section class="hero-site">
+        <div class="interface">
+          <div class="txt-hero">
+              <h1>Manutenção inteligente para <span>um mundo conectado.</span></h1>
+              <p> ResolveIt é um sistema inteligente e completo para gerenciamento de 
+              <span>abertura de chamados com acompanhamento em tempo real.</span></p>
+                <a href="#">
+                  <button>Saiba mais</button>
+                </a>
           </div>
         </div>
+        
+        <div class="overlay"></div>
       </section>
     </main>
 </body>
