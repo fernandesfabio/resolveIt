@@ -29,17 +29,44 @@
 <body>
 
   <header id="header">
-
-  <!--------- Modo Desktop ---------->
     <div class="container">
-        
-      <section class="logo">
-        <a href="./index.html">
-          <img class="logo-white" src="./assets/imgs/fullLogoWhite.png" alt="Logo ResolveIt">
-          <img class="logo-green" src="./assets/imgs/fullLogoGreen.png" alt="Logo ResolveIt">
-        </a>
-      </section>
+   <!--------- Menu responsivo ---------->
+      <section class="menu-btn">
+          <button id="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+          </button>
 
+        <!--------------- MENU DE NAVEGAÇÃO MOBILE ----------------->
+        <ul id="menu" class="menu" >
+          <li class="nav-itens">
+            <a class="nav-link" href="./index.html">Ínicio</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link" href="./assets/pages/pessoa-fisica.html">Pessoa Física</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link" href="./assets/pages/pessoa-juridica.html">Pessoa Jurídica</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link" href="./assets/pages/cotacoes.html">Cotações</a>
+          </li>
+      </ul>
+        <!--------------- MENU DE NAVEGAÇÃO MOBILE ----------------->
+      </section>
+      
+   <!--------- /Menu resposivo ---------->
+
+      <section class="logo">
+        <div class="logo-white">
+          <a href="./index.html"><img class="logo-icon" src="./assets/imgs/logoWhite.png" alt="Logo ResolveIt"></a>
+          <a href="./index.html"><img class="logo-name" src="./assets/imgs/logoNameWhite.png" alt="Logo ResolveIt"></a>        
+        </div>
+        <div class="logo-green">
+          <a href="./index.html"><img class="logo-icon" src="./assets/imgs/logoGreen.png" alt="Logo ResolveIt"></a>
+          <a href="./index.html"><img class="logo-name" src="./assets/imgs/logoNameGreen.png" alt="Logo ResolveIt"></a>
+        </div>
+      </section>
+  <!--------- Modo Desktop ---------->
       <section class="menu-desktop">
         <nav >
           <ul>
@@ -58,7 +85,7 @@
           </ul>
         </nav>
       </section>
-
+  <!-------- /Modo Desktop ---------->
       <section class="btn-contact">
           <a href="#contato">
             <button>Contato</button>
@@ -66,8 +93,6 @@
       </section>
         
     </div>
-  <!-------- /Modo Desktop ---------->
-
   </header>
   <main>
     <section class="hero-site">

@@ -26,41 +26,70 @@
 <body>
 
   <header id="header">
-      <div class="container">
-          
-          <section class="logo">
-            <a href="../../index.html">
-              <img class="logo-white" src="../imgs/fullLogoWhite.png" alt="Logo ResolveIt">
-              <img class="logo-green" src="../imgs/fullLogoGreen.png" alt="Logo ResolveIt">
-          </a>
-          </section>
+    <div class="container">
+   <!--------- Menu responsivo ---------->
+      <section class="menu-btn">
+          <button id="menu-toggle">
+              <i class="fa-solid fa-bars"></i>
+          </button>
 
-          <section class="menu-desktop">
-            <nav >
-              <ul>
-                <li class="nav-itens">
+        <!--------------- MENU DE NAVEGAÇÃO MOBILE ----------------->
+        <ul id="menu" class="menu" >
+          <li class="nav-itens">
+            <a class="nav-link" href="../../index.html">Ínicio</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link" href="./pessoa-fisica.html">Pessoa Física</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link" href="./pessoa-juridica.html">Pessoa Jurídica</a>
+          </li>
+          <li class="nav-itens">
+            <a class="nav-link" href="./cotacoes.html">Cotações</a>
+          </li>
+      </ul>
+        <!--------------- MENU DE NAVEGAÇÃO MOBILE ----------------->
+      </section>
+      
+   <!--------- /Menu resposivo ---------->
+
+      <section class="logo">
+        <div class="logo-white">
+          <a href="../../index.html"><img class="logo-icon" src="../imgs/logoWhite.png" alt="Logo ResolveIt"></a>
+          <a href="../../index.html"><img class="logo-name" src="../imgs/logoNameWhite.png" alt="Logo ResolveIt"></a>        
+        </div>
+        <div class="logo-green">
+          <a href="../../index.html"><img class="logo-icon" src="../imgs/logoGreen.png" alt="Logo ResolveIt"></a>
+          <a href="../../index.html"><img class="logo-name" src="../imgs/logoNameGreen.png" alt="Logo ResolveIt"></a>
+        </div>
+      </section>
+  <!--------- Modo Desktop ---------->
+      <section class="menu-desktop">
+        <nav >
+          <ul>
+              <li class="nav-itens">
                 <a class="nav-link" href="../../index.html">Ínicio</a>
-                </li>
-                <li class="nav-itens">
+              </li>
+              <li class="nav-itens">
                 <a class="nav-link" href="./pessoa-fisica.html">Pessoa Física</a>
-                </li>
-                <li class="nav-itens">
+              </li>
+              <li class="nav-itens">
                 <a class="nav-link" href="./pessoa-juridica.html">Pessoa Jurídica</a>
-                </li>
-                <li class="nav-itens">
+              </li>
+              <li class="nav-itens">
                 <a class="nav-link" href="./cotacoes.html">Cotações</a>
-                </li>
-              </ul>
-            </nav>
-          </section>
-
-          <section class="btn-contact">
-              <a href="#contato">
-                <button>Contato</button>
-              </a>
-          </section>
-          
-      </div>
+              </li>
+          </ul>
+        </nav>
+      </section>
+  <!-------- /Modo Desktop ---------->
+      <section class="btn-contact">
+          <a href="#contato">
+            <button>Contato</button>
+          </a>
+      </section>
+        
+    </div>
   </header>
   <main>
     <section class="hero-site">
