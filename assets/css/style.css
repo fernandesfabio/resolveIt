@@ -1,4 +1,5 @@
 
+/* ------------------------ ROOT ------------------------------------- */
 :root {
     --primary-color: #13898E;
     --white: #ffffff;
@@ -27,6 +28,9 @@ main{
     width: 100%;
     padding: 1.3rem 6%;
 }
+/* ------------------------ /ROOT ------------------------------------ */
+
+/* ------------------------ HEADER ------------------------------------- */
 header{
     width: 100%;
     background-color: transparent;
@@ -48,7 +52,6 @@ header .logo img{
 }
 
 /* Estilo menu dinâmico */
-
 header .logo img.logo-green{
     display: none;
 }
@@ -75,15 +78,14 @@ header.rolar .logo .logo-white{
 header.rolar .logo .logo-green{
     display: block;
 }
-
-/*----------------------*/
+/* /Estilo menu dinâmico */
 
 .menu-desktop ul{ 
     list-style: none;
 }
 .nav-itens{
     display: inline-block;
-    margin: 0 40px;
+    margin: 0 20px;
     font-weight: 700;
     font-size: 1.1rem;
 }
@@ -119,11 +121,73 @@ header.rolar .logo .logo-green{
     background-color: var(--white);
     color: var(--primary-color);
 }
+/* ------------------------ /HEADER ------------------------------------ */
 
 
+/* ------------------------ MAIN ------------------------------------- */
+section.hero-site{
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--white);
+    box-shadow: 0px 2px 10px var(--shadown-1);
+    position: relative;
+}
+.hero-site > .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #00000066;
+    width: 100%;
+    height: 100%;
+}
+.hero-site .interface{
+    display: flex;
+    align-items: end;
+    height: 100%;
+}
+.hero-site .txt-hero{
+    z-index: 1;
+}
+.hero-site .txt-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 200;
+}
+.hero-site .txt-hero h1 span{
+    display: block;
+    font-weight: 800;
+}
+.hero-site .txt-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+.hero-site .txt-hero span{
+    display: block;
+}
+.hero-site .txt-hero button{
+    width: 140px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 30px;
+}
+.hero-site .txt-hero button:hover{
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+/* ------------------------ /MAIN ------------------------------------ */
 
-
-
+/* ------------------------ FOOTER ------------------------------------- */
 footer .interface{
     display: flex;
     justify-content: center;
@@ -218,7 +282,7 @@ footer .interface{
     padding: 3px 10px;
     border-radius: 10px;
     border: none;
-    font-size: 22px;
+    /* font-size: 22px; */
     transition: .5s;
     background-color: white;
 }
@@ -251,3 +315,81 @@ footer .interface{
     align-items: center;
     gap: 10px;
 }
+
+/* ------------------------ /FOOTER ------------------------------------ */
+
+/* ------------------------ RESPONSIVO ------------------------------------- */
+@media screen and (max-width: 1180px) {
+ .developer{
+    font-size: 8px;
+ }
+ .developer h1{
+    font-size: 12px;
+ }
+ .developer h2{
+    font-size: 10px;
+ }
+ .developer .icons a{
+    padding: 4px;
+    border-radius: 5px;
+ }
+ .developer .icons i{
+    font-size: 12px;
+ }
+}
+@media screen and (max-width: 960px) {
+    .menu-desktop{
+        display: none;
+    }
+    header .btn-contact{
+        display: none;        
+    }
+    .footer-line{
+        flex-direction: column;
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 720px) {
+    .develops{
+        flex-direction: column;
+    }
+    
+    .footer-line{
+        flex-direction: column;
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 650px) {
+       .footer-logo img{
+        width: 150px;
+        padding: 3rem 6%;
+    }
+    .newsletter{
+        padding: 1.3rem 6%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .subscribe input{
+        width: 250px;
+        padding: 5px 10px;
+        font-size: 8px;
+    }
+    .subscribe button{
+        color: var(--white);
+        border: 2px solid var(--primary-color);
+        margin-left: -70px;
+        border-radius: 80px;
+        padding: 5px;
+        width: 70px;
+        font-size: 8px;
+        transition: .5s;
+    }
+    .subscribe button:hover{
+        background-color: var(--white);
+        color: var(--primary-color);
+    }
+}
+/* ------------------------ /RESPONSIVO ------------------------------------ */
