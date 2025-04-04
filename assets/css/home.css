@@ -4,3 +4,10 @@ section.hero-site{
     background-image: url(../imgs/hero3.jpeg);
 }
 /* ------------------------ /HERO ------------------------------------ */
+
+
+@media screen and (max-width: 670px) {
+   section.hero-site{
+    background-image: url(../imgs/backgroundMobile.png);
+   }
+}

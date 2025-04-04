@@ -4,3 +4,10 @@ section.hero-site{
     background-image: url(../imgs/cotacao2.jpg);
 }
 /* ------------------------ /HERO ------------------------------------ */
+
+
+@media screen and (max-width: 670px) {
+    section.hero-site{
+     background-image: url(../imgs/backgroundMobile.png);
+    }
+ }

@@ -28,3 +28,10 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //
+
+
+// mensagem newsletter
+
+function sendEmail(){
+    alert('Cadastro realizado com sucesso!')
+}

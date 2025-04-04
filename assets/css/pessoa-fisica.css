@@ -4,3 +4,11 @@ section.hero-site{
     background-image: url(../imgs/pessoaFisica.jpg);
 }
 /* ------------------------ /HERO ------------------------------------ */
+
+
+
+@media screen and (max-width: 670px) {
+    section.hero-site{
+     background-image: url(../imgs/backgroundMobile.png);
+    }
+ }
