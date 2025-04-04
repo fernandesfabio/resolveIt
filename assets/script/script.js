@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // mensagem newsletter
 
-function sendEmail(){
-    alert('Cadastro realizado com sucesso!')
+function sendEmail(event) {
+    event.preventDefault(); // Evita recarregar a página
+    const email = document.getElementById("emailInput").value;
+    
+    if (!email) {
+        alert("Por favor, insira um email.");
+        return;
+    }
+
+    alert("Email cadastrado com sucesso: " + email);
 }
+
+//

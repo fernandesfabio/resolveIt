@@ -28,6 +28,10 @@
 </head>
 <body>
 
+  <div class="over">
+    
+  </div>
+
   <header id="header">
     <div class="container">
    <!--------- Menu responsivo ---------->
@@ -38,22 +42,34 @@
 
         <!--------------- MENU DE NAVEGAÇÃO MOBILE ----------------->
         <ul id="menu" class="menu" >
-          <li class="nav-itens">
-            <a class="nav-link" href="./index.html">Ínicio</a>
+          <li class="nav-itens-mob">
+            <a class="nav-link" href="./index.html">
+              Início
+              <i class="fa-solid fa-house"></i>
+            </a>
           </li>
-          <li class="nav-itens">
-            <a class="nav-link" href="./assets/pages/pessoa-fisica.html">Pessoa Física</a>
+          <li class="nav-itens-mob">
+            <a class="nav-link" href="./assets/pages/pessoa-fisica.html">
+              Pessoa Física
+              <i class="fa-solid fa-person"></i>
+            </a>
           </li>
-          <li class="nav-itens">
-            <a class="nav-link" href="./assets/pages/pessoa-juridica.html">Pessoa Jurídica</a>
+          <li class="nav-itens-mob">
+            <a class="nav-link" href="./assets/pages/pessoa-juridica.html">
+              Pessoa Jurídica
+              <i class="fa-solid fa-briefcase"></i>
+            </a>
           </li>
-          <li class="nav-itens">
-            <a class="nav-link" href="./assets/pages/cotacoes.html">Cotações</a>
+          <li class="nav-itens-mob">
+            <a class="nav-link" href="./assets/pages/cotacoes.html">
+              Cotações
+              <i class="fa-solid fa-coins"></i> 
+            </a>
           </li>
-      </ul>
+        </ul>
         <!--------------- MENU DE NAVEGAÇÃO MOBILE ----------------->
-      </section>
-      
+        <div class="menu-bluer"></div>
+      </section>  
    <!--------- /Menu resposivo ---------->
 
       <section class="logo">
@@ -71,7 +87,7 @@
         <nav >
           <ul>
               <li class="nav-itens">
-                <a class="nav-link" href="./index.html">Ínicio</a>
+                <a class="nav-link" href="./index.html">Início</a>
               </li>
               <li class="nav-itens">
                 <a class="nav-link" href="./assets/pages/pessoa-fisica.html">Pessoa Física</a>
@@ -94,6 +110,7 @@
         
     </div>
   </header>
+
   <main>
     <section class="hero-site">
       <div class="interface">
@@ -106,10 +123,11 @@
               </a>
         </div>
       </div>
-      
       <div class="overlay"></div>
     </section>
+
   </main>
+
   <footer>
     <div class="interface">
       <section class="footer-logo">
@@ -120,10 +138,10 @@
       <section class="newsletter">
         <h1> Receba ofertas exclusivas em seu e-mail</h1>
         <p>Inscreva-se em nossa newsletter e fique atualizado</p>
-        <div class="subscribe">
-            <input type='email' placeholder='seuemail@exemplo.com.br' /> 
-            <button onclick="sendEmail()">Subscribe</button>
-        </div>
+        <form class="subscribe" onsubmit="sendEmail(event)">
+            <input type='email' id="emailInput" placeholder='seuemail@exemplo.com.br'  required /> 
+            <button type="submit">Subscribe</button>
+        </form>
       </section>
       <section class="created-by">
         <div class="created-title">
