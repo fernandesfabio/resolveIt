@@ -16,12 +16,12 @@ document.addEventListener('scroll', ()=>{
 // BOTÃO SANDWICH
 
 document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-    const icon = menuToggle.querySelector("i");
+    let menuToggle = document.getElementById("menu-toggle");
+    let menuMobile = document.getElementById("menu");
+    let icon = menuToggle.querySelector("i");
 
     menuToggle.addEventListener("click", function () {
-        menu.classList.toggle("show-menu");
+        menuMobile.classList.toggle("abrir");
         icon.classList.toggle("fa-bars");
         icon.classList.toggle("fa-xmark");
     });
