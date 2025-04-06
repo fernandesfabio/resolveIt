@@ -147,7 +147,7 @@ header.rolar .logo .logo-green{
     border-radius: 3.1rem;
     transition: 0.5s  ;
   }
-  .nav-link:hover::after{
+.nav-link:hover::after{
     width: 100%;
   }
 .contact button{
@@ -172,7 +172,7 @@ header.rolar .logo .logo-green{
 .menu{ 
     display: none;
     height: 0;
-    width: 0;
+    width: 50%;
     background-color: var(--backgrond-bluer);
     backdrop-filter: blur(10px);
     position: absolute;
