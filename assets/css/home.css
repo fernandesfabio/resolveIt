@@ -1,13 +1,13 @@
 
 /* ------------------------  HERO ----------------------------------- */
 section.hero-site{
-    background-image: url(../imgs/hero3.jpeg);
+    background-image: url(../imgs/home.jpeg);
 }
 /* ------------------------ /HERO ------------------------------------ */
 
 
 @media screen and (max-width: 670px) {
    section.hero-site{
-    background-image: url(../imgs/citynight.png);
+    background-image: url(../imgs/homeMobile.png)
    }
 }

@@ -7,15 +7,15 @@
     --gray-100: #dedede;
     --christi-400: #80d14a;
     --christi-300: #a2e175;
-    --overlay: #00000098;
+    --overlay: #0000005e;
     --black-700: #212121;
     --black-800: #0d0c0f;
-    --gray-500: rgba(85, 85, 85, 0.55);
+    --gray-500: #5555558c;
     --dove-gray-900: #3d3d3d;
     --shadown-1: #070707;
     --primary-font: 'Poppins', sans-serif;
-    --backgrond-bluer: rgba(104, 102, 102, 0.2);
-    --backgrond-button: rgba(255, 255, 255, 0.13);
+    --backgrond-bluer: #68666633;
+    --backgrond-button: #ffffff21;
 }
 * { 
     padding: 0;
@@ -500,7 +500,7 @@ footer .interface{
     .hero-site .interface{
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
         height: 100%;
     }
     .hero-site .txt-hero{
