@@ -11,3 +11,82 @@ section.hero-site{
      background-image: url(../imgs/cotacoesMobile.png);
     }
  }
+
+ .cotacao-servico {
+    background-color: var(--white);
+    padding: 4rem 6%;
+    color: var(--black-700);
+}
+
+.form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-container h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.form-container p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+.form-cotacao {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray-100);
+    background-color: #f9f9f9;
+    color: var(--black-700);
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+}
+
+.form-cotacao button {
+    width: 100%;
+    max-width: 200px;
+    align-self: center;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-cotacao button:hover {
+    background-color: var(--christi-500);
+}

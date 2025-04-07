@@ -12,3 +12,57 @@ section.hero-site{
      background-image: url(../imgs/pessoaFisicaMobile2.png);
     }
  }
+
+ .qualidade-servico {
+    /* background-color: var(--white); */
+    padding: 4rem 6%;
+    color: var(--black-700);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.conteudo-qualidade {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.conteudo-qualidade h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.conteudo-qualidade p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.conteudo-qualidade ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 0;
+    margin: 0;
+}
+
+.conteudo-qualidade li {
+    background-color: var(--christi-300);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 240px;
+    justify-content: center;
+}
+
+.conteudo-qualidade li i {
+    font-size: 1.2rem;
+}

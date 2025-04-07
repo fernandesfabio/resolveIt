@@ -113,8 +113,10 @@
       <div class="interface">
         <div class="txt-hero">
             <h1>A melhor solução em suporte <span>para você ou sua empresa!</span></h1>
-            <p>Garanta a melhor solução em suporte técnico com  
-            <span>um atendimento ágil e personalizado.</span>
+            <p>
+              Garanta a melhor solução em suporte   
+              <span>técnico com um atendimento</span>
+              <span>ágil e personalizado.</span>
             </p>
             <span class="text-hero-final">Solicite sua cotação agora mesmo! </span>
         </div>
@@ -122,6 +124,43 @@
       
       <div class="overlay"></div>
     </section>
+
+    <section class="cotacao-servico">
+      <div class="interface">
+        <div class="form-container">
+          <h2>Solicite sua Cotação</h2>
+          <p>Preencha o formulário abaixo com suas informações e receba uma proposta personalizada do nosso time.</p>
+          
+          <form class="form-cotacao">
+            <div class="form-group">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+              <label for="tipo">Tipo de atendimento</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Selecione</option>
+                <option value="fisica">Pessoa Física</option>
+                <option value="juridica">Pessoa Jurídica</option>
+              </select>
+            </div>
+    
+            <div class="form-group">
+              <label for="mensagem">Descreva sua necessidade</label>
+              <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+    
+            <button type="submit">Enviar Cotação</button>
+          </form>
+        </div>
+      </div>
+    </section>  
   </main>
   <footer>
     <div class="interface">

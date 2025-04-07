@@ -11,3 +11,62 @@ section.hero-site{
     background-image: url(../imgs/homeMobile.png)
    }
 }
+
+
+.funcionalidades {
+    padding: 4rem 6%;
+    text-align: center;
+}
+
+.funcionalidades h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.funcionalidades .descricao {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cards-funcionalidade {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card-func {
+    background-color: var(--white);
+    border-radius: 15px;
+    padding: 2rem;
+    width: 260px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.card-func:hover {
+    transform: translateY(-5px);
+}
+
+.card-func i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.card-func h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: var(--black-700);
+}
+
+.card-func p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--dove-gray-900);
+}
