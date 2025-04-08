@@ -1,82 +1,6 @@
 
-/* ------------------------  HERO ----------------------------------- */
 section.hero-site{
     background-image: url(../imgs/home.jpeg);
-}
-/* ------------------------ /HERO ------------------------------------ */
-
-@media screen and (max-width: 960px) {
-.card-programa{
-    flex-direction: column;
-}
-.programas-sap .title-programa{
-    font-size: 24px;
-    padding: 3rem 6%;
-}
-.programas-papps .title-programa{
-    font-size: 24px;
-    padding: 3rem 6%;
-}
-.programas-sap .side-right{
-    margin-left: 0;
-    margin-top: -30px;
-}
-.programas-papps .side-right{
-    margin-left: 0;
-    margin-top: -30px;
-}
-}
-
-@media screen and (max-width: 670px) {
-section.hero-site{
-background-image: url(../imgs/homeMobile.png)
-}
-.programas-sap .title-programa{
-    font-size: 16px;
-    padding: 1.3rem 6%;
-}
-.programas-papps .title-programa{
-    font-size: 16px;
-    padding: 1.3rem 6%;
-}
-.programas-sap .side-left{
-    width: 330px;
-    height: 500px;
-    padding: 2rem;
-}
-.programas-papps .side-left{
-    width: 340px;
-    height: 500px;
-    padding: 2rem;
-}
-.side-left h1{
-    color: var(--primary-color);
-    text-align: center;
-    font-size: .8rem;
-    padding: 1rem;
-}
-.side-left p{
-    color: var(--black-700);
-    font-size: 10px;
-}
-.side-left ul{
-    font-size: 10px;
-    color: var(--primary-color);
-}
-.side-left ul li span{
-    font-size: 10px;
-    color: var(--black-700);
-}
-.programas-sap .side-right{
-    height: 370px;
-    width: 350px;
-    margin-top: -10px;
-}
-.programas-papps .side-right{
-    height: 370px;
-    width: 350px;
-    margin-top: -10px;
-}
 }
 .funcionalidades {
     padding: 4rem 6%;
@@ -109,6 +33,7 @@ background-image: url(../imgs/homeMobile.png)
     border-radius: 15px;
     padding: 2rem;
     width: 260px;
+    height: 300px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     transition: transform 0.3s ease;
 }
@@ -152,7 +77,7 @@ background-image: url(../imgs/homeMobile.png)
 }
 .title-programa{
     color: var(--white);
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 600;
     padding: 1.3rem;
 }
@@ -213,3 +138,198 @@ background-image: url(../imgs/homeMobile.png)
     padding: 1.3rem 6%;
     margin-left: 30px;
 }
+
+/* SECTION DIFERENCIAIS */ 
+.diferenciais{
+ padding: 1.3rem 6%;
+}
+
+.diferenciais h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: var(--primary-color);
+    padding: 1.3rem;
+    margin-top: 2rem;
+  }
+.diferenciais p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.3rem;
+    color: var(--black-700);
+    padding: 1.3rem 6%;
+  }
+.diferenciais .btn-avalicao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    padding: 1.3rem 6%;
+  }
+.diferenciais .btn-avalicao button{
+    width: 140px;
+    height: 50px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: .8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .5s;
+    margin-bottom: 7rem;
+}
+.diferenciais .btn-avalicao button:hover{
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  th {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+
+/* ------------------------  rESPONSIVIDADE ----------------------------------- */
+
+@media screen and (max-width: 960px) {
+    .card-programa{
+        flex-direction: column;
+    }
+    .programas-sap .title-programa{
+        font-size: 24px;
+        padding: 3rem 6%;
+    }
+    .programas-papps .title-programa{
+        font-size: 24px;
+        padding: 3rem 6%;
+    }
+    .programas-sap .side-right{
+        margin-left: 0;
+        margin-top: -30px;
+    }
+    .programas-papps .side-right{
+        margin-left: 0;
+        margin-top: -30px;
+    }
+    }
+    @media (max-width: 768px) {
+        table, thead, tbody, th, td, tr {
+          display: block;
+        }
+    
+        thead {
+          display: none;
+        }
+    
+        tr {
+          margin-bottom: 15px;
+          border: 1px solid #ccc;
+          padding: 10px;
+          background-color: #fff;
+        }
+    
+        td {
+          padding: 10px;
+          text-align: right;
+          position: relative;
+        }
+    
+        td::before {
+          content: attr(data-label);
+          position: absolute;
+          left: 10px;
+          text-align: left;
+          font-weight: 700;
+          color: var(--primary-color);
+        }
+      }
+    @media screen and (max-width: 670px) {
+        section.hero-site{
+        background-image: url(../imgs/homeMobile.png)
+        }
+        .programas-sap .title-programa{
+            font-size: 16px;
+            padding: 1.3rem 6%;
+        }
+        .programas-papps .title-programa{
+            font-size: 16px;
+            padding: 1.3rem 6%;
+        }
+        .programas-sap .side-left{
+            width: 330px;
+            height: 520px;
+            padding: 2rem;
+        }
+        .programas-papps .side-left{
+            width: 340px;
+            height: 520px;
+            padding: 2rem;
+        }
+        .side-left h1{
+            color: var(--primary-color);
+            text-align: left;
+            font-size: .8rem;
+            padding: 10px;
+        }
+        .side-left p{
+            color: var(--black-700);
+            font-size: 10px;
+        }
+        .side-left ul{
+            font-size: 10px;
+            color: var(--primary-color);
+        }
+        .side-left ul li span{
+            font-size: 10px;
+            color: var(--black-700);
+        }
+        .programas-sap .side-right{
+            height: 370px;
+            width: 350px;
+            margin-top: -10px;
+        }
+        .programas-papps .side-right{
+            height: 370px;
+            width: 350px;
+            margin-top: -10px;
+        }
+        .diferenciais h1{
+            font-size: 16px;
+        }
+        .diferenciais p{
+            font-size: 14px;
+        }
+        .diferenciais table th, td {
+            display: flex;
+            justify-content: end;
+            align-items: center; 
+            padding: 10px;
+            border-bottom: none;
+            font-size: 10px;
+          }
+        
+          .diferenciais TH {
+            background-color: var(--primary-color);
+            color: #fff;
+            font-size: 9px;
+          }
+        }
+    /* ------------------------ /RESPONSIVIDADE ------------------------------------ */
