@@ -75,6 +75,16 @@ section.hero-site{
     box-shadow: var(--shadown-1);
     margin-bottom: 30px;
 }
+.programas-servicenow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem 6%;  
+    background-image: linear-gradient(var(--primary-color), #7bbc5f);
+    box-shadow: var(--shadown-1);
+    margin-bottom: 30px;
+}
 .title-programa{
     color: var(--white);
     font-size: 2rem;
@@ -134,9 +144,8 @@ section.hero-site{
 .programas-papps .side-right{
     background-image: url(../imgs/bgPowerApps.png);
 }
-.programas-sap.interface{
-    padding: 1.3rem 6%;
-    margin-left: 30px;
+.programas-servicenow .side-right{
+    background-image: url(../imgs/servicenowTeste.png);
 }
 
 /* SECTION DIFERENCIAIS */ 
@@ -221,11 +230,19 @@ section.hero-site{
         font-size: 24px;
         padding: 3rem 6%;
     }
+    .programas-servicenow .title-programa{
+        font-size: 24px;
+        padding: 3rem 6%;
+    }
     .programas-sap .side-right{
         margin-left: 0;
         margin-top: -30px;
     }
     .programas-papps .side-right{
+        margin-left: 0;
+        margin-top: -30px;
+    }
+    .programas-servicenow .side-right{
         margin-left: 0;
         margin-top: -30px;
     }
@@ -273,12 +290,21 @@ section.hero-site{
             font-size: 16px;
             padding: 1.3rem 6%;
         }
+        .programas-servicenow .title-programa{
+            font-size: 16px;
+            padding: 1.3rem 6%;
+        }
         .programas-sap .side-left{
             width: 330px;
             height: 520px;
             padding: 2rem;
         }
         .programas-papps .side-left{
+            width: 340px;
+            height: 520px;
+            padding: 2rem;
+        }
+        .programas-servicenow .side-left{
             width: 340px;
             height: 520px;
             padding: 2rem;
@@ -307,6 +333,11 @@ section.hero-site{
             margin-top: -10px;
         }
         .programas-papps .side-right{
+            height: 370px;
+            width: 350px;
+            margin-top: -10px;
+        }
+        .programas-servicenow .side-right{
             height: 370px;
             width: 350px;
             margin-top: -10px;
