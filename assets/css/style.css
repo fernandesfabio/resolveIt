@@ -30,6 +30,9 @@
 html{
     scroll-behavior: smooth;
 }
+main{
+    background-color: var(--gray-100);
+}
 /* ------------------------ /ROOT ------------------------------------ */
 
 /* ------------------------ HEADER ------------------------------------- */
@@ -221,7 +224,7 @@ header .menu.abrir{
 
 /* ------------------------ MAIN ------------------------------------- */
 section.hero-site{
-    height: 100vh;
+    height: 101vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -411,7 +414,6 @@ footer .interface{
     align-items: center;
     gap: 10px;
 }
-
 /* ------------------------ /FOOTER ------------------------------------ */
 
 /* ------------------------ RESPONSIVO ------------------------------------- */
@@ -582,11 +584,19 @@ footer .interface{
 
 
 
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
 
-
-
-
-
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+}
 
 
 

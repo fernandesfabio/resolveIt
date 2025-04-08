@@ -178,9 +178,9 @@ section.hero-site{
 .diferenciais .btn-avalicao button{
     width: 140px;
     height: 50px;
-    background-color: var(--white);
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--white);
     border-radius: 10px;
     font-weight: 700;
     font-size: .8rem;
@@ -190,8 +190,9 @@ section.hero-site{
     margin-bottom: 7rem;
 }
 .diferenciais .btn-avalicao button:hover{
-    background-color: var(--primary-color);
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
 }
 
   table {
@@ -219,32 +220,38 @@ section.hero-site{
 /* ------------------------  rESPONSIVIDADE ----------------------------------- */
 
 @media screen and (max-width: 960px) {
+    .funcionalidades h2 {
+        font-size: 1.5rem;
+    }
+    .funcionalidades .descricao {
+        font-size: 1rem;
+    }
     .card-programa{
         flex-direction: column;
     }
     .programas-sap .title-programa{
-        font-size: 24px;
+        font-size: 1.5rem;
         padding: 3rem 6%;
     }
     .programas-papps .title-programa{
-        font-size: 24px;
+        font-size: 1.5rem;
         padding: 3rem 6%;
     }
     .programas-servicenow .title-programa{
-        font-size: 24px;
+        font-size: 1.5rem;
         padding: 3rem 6%;
     }
     .programas-sap .side-right{
         margin-left: 0;
-        margin-top: -30px;
+        margin-top: -1.8rem;
     }
     .programas-papps .side-right{
         margin-left: 0;
-        margin-top: -30px;
+        margin-top: -1.8rem;
     }
     .programas-servicenow .side-right{
         margin-left: 0;
-        margin-top: -30px;
+        margin-top: -1.8rem;
     }
     }
     @media (max-width: 768px) {
@@ -257,14 +264,14 @@ section.hero-site{
         }
     
         tr {
-          margin-bottom: 15px;
+          margin-bottom: 1rem;
           border: 1px solid #ccc;
-          padding: 10px;
+          padding: .8rem;
           background-color: #fff;
         }
     
         td {
-          padding: 10px;
+          padding: .8rem;
           text-align: right;
           position: relative;
         }
@@ -272,7 +279,7 @@ section.hero-site{
         td::before {
           content: attr(data-label);
           position: absolute;
-          left: 10px;
+          left: .8rem;
           text-align: left;
           font-weight: 700;
           color: var(--primary-color);
@@ -282,85 +289,85 @@ section.hero-site{
         section.hero-site{
         background-image: url(../imgs/homeMobile.png)
         }
+        .funcionalidades h2 {
+            font-size: 1rem;
+        }
+        .funcionalidades .descricao {
+            font-size: .8rem;
+        }
         .programas-sap .title-programa{
-            font-size: 16px;
+            font-size: 1rem;
             padding: 1.3rem 6%;
         }
         .programas-papps .title-programa{
-            font-size: 16px;
+            font-size: 1rem;
             padding: 1.3rem 6%;
         }
         .programas-servicenow .title-programa{
-            font-size: 16px;
+            font-size: 1rem;
             padding: 1.3rem 6%;
         }
         .programas-sap .side-left{
-            width: 330px;
-            height: 520px;
+            width: 20.6rem;
+            height: 32.5rem;
             padding: 2rem;
         }
         .programas-papps .side-left{
-            width: 340px;
-            height: 520px;
+            width: 20.6rem;
+            height: 32.5rem;
             padding: 2rem;
         }
         .programas-servicenow .side-left{
-            width: 340px;
-            height: 520px;
+            width: 20.6rem;
+            height: 32.5rem;
             padding: 2rem;
         }
         .side-left h1{
             color: var(--primary-color);
             text-align: left;
             font-size: .8rem;
-            padding: 10px;
+            padding: .6rem;
         }
         .side-left p{
             color: var(--black-700);
-            font-size: 10px;
+            font-size: .6rem;
         }
         .side-left ul{
-            font-size: 10px;
+            font-size: .6rem;
             color: var(--primary-color);
         }
         .side-left ul li span{
-            font-size: 10px;
+            font-size: .6rem;
             color: var(--black-700);
         }
         .programas-sap .side-right{
-            height: 370px;
-            width: 350px;
-            margin-top: -10px;
+            height: 23.1rem;
+            width: 21.8rem;
+            margin-top: -.6rem;
         }
         .programas-papps .side-right{
-            height: 370px;
-            width: 350px;
-            margin-top: -10px;
+            height: 23.1rem;
+            width: 21.8rem;
+            margin-top: -.6rem;
         }
         .programas-servicenow .side-right{
-            height: 370px;
-            width: 350px;
-            margin-top: -10px;
+            height: 23.1rem;
+            width: 21.8rem;
+            margin-top: -.6rem;
         }
         .diferenciais h1{
-            font-size: 16px;
+            font-size: 1rem;
         }
         .diferenciais p{
-            font-size: 14px;
+            font-size: .8rem;
         }
         .diferenciais table th, td {
             display: flex;
             justify-content: end;
             align-items: center; 
-            padding: 10px;
+            padding: .6rem;
             border-bottom: none;
-            font-size: 10px;
-          }
-        
-          .diferenciais TH {
-            background-color: var(--primary-color);
-            color: #fff;
-            font-size: 9px;
+            font-size: .6rem;
           }
         }
     /* ------------------------ /RESPONSIVIDADE ------------------------------------ */

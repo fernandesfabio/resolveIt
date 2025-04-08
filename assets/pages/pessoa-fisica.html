@@ -129,7 +129,7 @@
           <p>
             Nosso atendimento é rápido, descomplicado e feito por especialistas prontos para resolver qualquer problema técnico. Seja para seu computador pessoal, internet residencial ou suporte em aplicativos, garantimos excelência do primeiro contato até a resolução final.
           </p>
-          <ul>
+          <ul class="hidden">
             <li><i class="fa-solid fa-circle-check"></i> Atendimento 100% humanizado</li>
             <li><i class="fa-solid fa-bolt"></i> Resolução rápida de problemas</li>
             <li><i class="fa-solid fa-shield-halved"></i> Segurança em todas as etapas</li>
@@ -147,15 +147,17 @@
           <img class="logo-white" src="../imgs/logoSquareWhite.png" alt="Logo ResolveIt">
         </a>
       </section>
+
       <section class="newsletter">
         <h1> Receba ofertas exclusivas em seu e-mail</h1>
-        <p className='text-[12px] md:text-lg'>Inscreva-se em nossa newsletter e fique atualizado</p>
+        <p>Inscreva-se em nossa newsletter e fique atualizado</p>
         <form class="subscribe" onsubmit="sendEmail(event)">
           <input type='email' id="emailInput" placeholder='seuemail@exemplo.com.br'  required /> 
           <button type="submit">Subscribe</button>
         </form>
       </section>
-      <section class="created-by">
+
+      <section class="created-by hidden">
         <div class="created-title">
           <h1 id="contato">Nossos consultores</h1>
         </div>
@@ -202,7 +204,8 @@
           </div>
         </div>
       </section>
-      <section class="footer-line" className='w-full flex flex-col justify-center md:flex-row md:justify-between items-center border-t-2 border-[#b5a47e] p-5 mt-10 text-[10px]'>
+
+      <section class="footer-line" >
         <div class="CopyRigth">
         <p>CopyRigth
         <i class="fa-regular fa-copyright"></i>

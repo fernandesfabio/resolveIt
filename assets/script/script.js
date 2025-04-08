@@ -1,20 +1,26 @@
-// SCROLL DA TELA
+// ==============================
+// Scroll da tela
+// ==============================
 let navbar = document.querySelector('#header');
 
 document.addEventListener('scroll', ()=>{
     let scrollTop = window.scrollY;
 
-    if(scrollTop > 200){
+    if(scrollTop > 1){
         navbar.classList.add('rolar');
     }else {
         navbar.classList.remove('rolar');
     }
 });
+// ==============================
+// /Scroll da tela
+// ==============================
 
 // 
 
-// BOTÃO SANDWICH
-
+// ==============================
+// Botão Sandwich
+// ==============================
 document.addEventListener("DOMContentLoaded", function () {
     let menuToggle = document.getElementById("menu-toggle");
     let menuMobile = document.getElementById("menu");
@@ -26,12 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
         icon.classList.toggle("fa-xmark");
     });
 });
+// ==============================
+// /Botão Sandwich
+// ==============================
 
 //
 
-
-// mensagem newsletter
-
+// ==============================
+// Mensagem newsletter
+// ==============================
 function sendEmail(event) {
     event.preventDefault(); // Evita recarregar a página
     const email = document.getElementById("emailInput").value;
@@ -43,33 +52,28 @@ function sendEmail(event) {
 
     alert("Email cadastrado com sucesso: " + email);
 }
+// ==============================
+// /Mensagem newsletter
+// ==============================
 
 //
 
-
 // ==============================
-// Carrossel de Páginas do Sistema
+// transições de elementos na página
 // ==============================
-let currentSlide = 0;
-const slides = document.querySelectorAll('.carousel-item');
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
+const myObserver = new IntersectionObserver( (entries) =>{
+  entries.forEach( (entry) => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show')
+    }else{
+      entry.target.classList.remove('show')
     }
-  });
-}
+  })
+})
 
-function nextSlide() {
-  currentSlide = (currentSlide + 1) % slides.length;
-  showSlide(currentSlide);
-}
+const elements = document.querySelectorAll('.hidden')
 
-function previousSlide() {
-  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-  showSlide(currentSlide);
-}
-
-showSlide(currentSlide);
+elements.forEach( (elements) => myObserver.observe(elements))
+// ==============================
+// /transições de elementos na página
+// ==============================

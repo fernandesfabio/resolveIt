@@ -88,5 +88,7 @@ section.hero-site{
 }
 
 .form-cotacao button:hover {
-    background-color: var(--christi-500);
+    background-color: var(--white);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
