@@ -1,3 +1,6 @@
+
+
+
 // ==============================
 // Scroll da tela
 // ==============================
@@ -42,15 +45,16 @@ document.addEventListener("DOMContentLoaded", function () {
 // Mensagem newsletter
 // ==============================
 function sendEmail(event) {
-    event.preventDefault(); // Evita recarregar a página
-    const email = document.getElementById("emailInput").value;
-    
-    if (!email) {
-        alert("Por favor, insira um email.");
-        return;
-    }
+  event.preventDefault(); // Evita recarregar a página
 
-    alert("Email cadastrado com sucesso: " + email);
+  const emailInput = document.getElementById("emailInput");
+  const email = emailInput.value;
+  Swal.fire({
+    title: "Enviado!",
+    text: "Cadastro enviado com sucesso!",
+    icon: "success"
+  });
+  emailInput.value = "";
 }
 // ==============================
 // /Mensagem newsletter
@@ -76,4 +80,23 @@ const elements = document.querySelectorAll('.hidden')
 elements.forEach( (elements) => myObserver.observe(elements))
 // ==============================
 // /transições de elementos na página
+// ==============================
+
+//
+
+// ==============================
+// /Mensagem Cotação
+// ==============================
+  function exibirAlerta(event) {
+    event.preventDefault(); // Impede o envio real do formulário
+    Swal.fire({
+      title: "Email enviado!",
+      text: "Aguarde o retorno de um de nossos corretores!",
+      icon: "success"
+    });
+
+    document.querySelector('.form-cotacao').reset();
+  }
+// ==============================
+// /Mensagem Cotação
 // ==============================

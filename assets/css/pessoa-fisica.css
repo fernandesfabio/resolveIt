@@ -50,7 +50,7 @@ section.hero-site{
 }
 
 .conteudo-qualidade li {
-    background-color: var(--christi-300);
+    background-color: var(--primary-color);
     color: var(--white);
     padding: 1rem 1.5rem;
     border-radius: 10px;
