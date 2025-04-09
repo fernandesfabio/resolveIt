@@ -100,3 +100,41 @@ elements.forEach( (elements) => myObserver.observe(elements))
 // ==============================
 // /Mensagem Cotação
 // ==============================
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const imageList = document.querySelector('[data-slide="list"]');
+  const images = imageList.querySelectorAll('img');
+  const imageWidth = images[0].offsetWidth + 20; // ajuste o 10 se tiver gap/margin
+  const totalImages = images.length;
+
+  // Clona as imagens e adiciona ao final para o efeito de loop
+  images.forEach(img => {
+    const clone = img.cloneNode(true);
+    imageList.appendChild(clone);
+  });
+
+  let currentIndex = 0;
+
+  function slideToNext() {
+    currentIndex++;
+
+    imageList.scrollTo({
+      left: currentIndex * imageWidth,
+      behavior: 'smooth'
+    });
+
+    // Quando passar da última imagem original, reseta o scroll
+    if (currentIndex >= totalImages) {
+      setTimeout(() => {
+        imageList.scrollTo({
+          left: 0,
+          behavior: 'auto'
+        });
+        currentIndex = 0;
+      }, 500); // espera a transição antes de resetar
+    }
+  }
+
+  setInterval(slideToNext, 3000); // Troca a cada 3 segundos
+});

@@ -67,3 +67,31 @@ section.hero-site{
 .conteudo-qualidade li i {
     font-size: 1.2rem;
 }
+
+.title-parceiros{
+    padding: 1.3rem;
+    text-align: center;
+    color: var(--primary-color);
+}
+.cards-container{
+    padding: 1.3rem 7%;
+    background-color: var(--white);
+    margin-bottom: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+.image-list {
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+  }
+  
+  .image-list img {
+    flex: 0 0 auto;
+    width: 200px; 
+    height: 100px; 
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+
