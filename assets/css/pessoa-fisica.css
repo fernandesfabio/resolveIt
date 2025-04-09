@@ -67,28 +67,29 @@ section.hero-site{
     font-size: 1.2rem;
 }
 
-.title-parceiros{
-    padding: 1.3rem;
-    text-align: center;
-    color: var(--primary-color);
-}
-.cards-container{
-    padding: 1.3rem 7%;
+.parceiros .interface{
     background-color: var(--white);
+    padding: 0 7%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 3rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-}
-.image-list {
-    display: flex;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    gap: 20px;
-  }
-  
-  .image-list img {
-    flex: 0 0 auto;
-    width: 200px; 
-    height: 100px; 
-    object-fit: cover;
-    border-radius: 10px;
-  }
+   }
+   .title-parceiros {
+       padding: 1.3rem 6%;
+       text-align: center;
+       color: var(--primary-color);
+     }
+     
+     .slider-wrapper {
+       overflow: hidden;
+       width: 100%;
+     }
+     .slider-track {
+       display: flex;
+       gap: 20px;
+       transition: transform 0.5s ease-in-out;
+     }
+     .slider-track img {
+       width: 200px;
+       height: 100px;
+       flex-shrink: 0;
+     }

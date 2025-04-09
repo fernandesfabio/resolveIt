@@ -50,8 +50,8 @@ function sendEmail(event) {
   const emailInput = document.getElementById("emailInput");
   const email = emailInput.value;
   Swal.fire({
-    title: "Enviado!",
-    text: "Cadastro enviado com sucesso!",
+    title: "Cadastro efetuado!",
+    text: `Email: ${email} cadastrado com sucesso.`,
     icon: "success"
   });
   emailInput.value = "";
@@ -88,10 +88,12 @@ elements.forEach( (elements) => myObserver.observe(elements))
 // /Mensagem Cotação
 // ==============================
   function exibirAlerta(event) {
-    event.preventDefault(); // Impede o envio real do formulário
+    let email = document.getElementById('email')
+    let emailCadstro = email.value;
+    event.preventDefault(); 
     Swal.fire({
       title: "Email enviado!",
-      text: "Aguarde o retorno de um de nossos corretores!",
+      text: "Aguarde o retorno de um de nossos vendedores no email: " +emailCadstro,
       icon: "success"
     });
 
@@ -103,12 +105,12 @@ elements.forEach( (elements) => myObserver.observe(elements))
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  const imageList = document.querySelector('[data-slide="list"]');
+  const imageList = document.getElementById('list');
   const images = imageList.querySelectorAll('img');
-  const imageWidth = images[0].offsetWidth + 20; // ajuste o 10 se tiver gap/margin
+  const imageWidth = images[0].offsetWidth + 20; // inclui o gap
   const totalImages = images.length;
 
-  // Clona as imagens e adiciona ao final para o efeito de loop
+  // Clona as imagens
   images.forEach(img => {
     const clone = img.cloneNode(true);
     imageList.appendChild(clone);
@@ -124,7 +126,7 @@ document.addEventListener('DOMContentLoaded', () => {
       behavior: 'smooth'
     });
 
-    // Quando passar da última imagem original, reseta o scroll
+    // Quando passar da última imagem original, reseta
     if (currentIndex >= totalImages) {
       setTimeout(() => {
         imageList.scrollTo({
@@ -132,9 +134,40 @@ document.addEventListener('DOMContentLoaded', () => {
           behavior: 'auto'
         });
         currentIndex = 0;
-      }, 500); // espera a transição antes de resetar
+      }, 510); // espera a transição suave terminar
     }
   }
 
-  setInterval(slideToNext, 3000); // Troca a cada 3 segundos
+  setInterval(slideToNext, 3000);
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const track = document.getElementById('sliderTrack');
+  const images = Array.from(track.children);
+  const imageWidth = images[0].offsetWidth + 20; // gap
+
+  // Clona primeiro e último lote
+  images.forEach(img => {
+    track.appendChild(img.cloneNode(true)); // fim
+  });
+
+  let currentIndex = 0;
+
+  function slide() {
+    currentIndex++;
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(-${currentIndex * imageWidth}px)`;
+
+    // Quando chegarmos no fim do clone, resetamos instantaneamente
+    if (currentIndex === images.length) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        track.style.transform = `translateX(0px)`;
+        currentIndex = 0;
+      }, 500); // mesmo tempo da transição
+    }
+  }
+
+  setInterval(slide, 3000);
 });
