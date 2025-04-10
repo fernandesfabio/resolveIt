@@ -6,13 +6,6 @@ section.hero-site{
 /* ------------------------ /HERO ------------------------------------ */
 
 
-@media screen and (max-width: 670px) {
-    section.hero-site{
-     background-image: url(../imgs/PessoaJuridicaMobile.png);
-    }
- }
-
-
 .qualidade-servico {
     /* background-color: var(--white); */
     padding: 4rem 6%;
@@ -85,7 +78,6 @@ section.hero-site{
     overflow: hidden;
     width: 100%;
   }
-  
   .slider-track {
     display: flex;
     gap: 20px;
@@ -97,3 +89,35 @@ section.hero-site{
     flex-shrink: 0;
   }
   
+
+  @media screen and (max-width: 670px) {
+    section.hero-site{
+     background-image: url(../imgs/PessoaJuridicaMobile.png);
+    }
+    .conteudo-qualidade h2 {
+        font-size: 1rem;
+    }
+    
+    .conteudo-qualidade p {
+        font-size: .8rem;
+        margin-bottom: 2rem;
+        font-weight: 300;
+        line-height: 1.6;
+    }
+    .parceiros .interface{
+        padding: 0 6%;
+       }
+       .title-parceiros h1 {
+           font-size: 1rem;
+         }
+         .slider-track {
+           display: flex;
+           gap: 20px;
+           transition: transform 0.5s ease-in-out;
+         }
+         .slider-track img {
+           width: 100px;
+           height: 40px;
+           flex-shrink: 0;
+         }
+ }
