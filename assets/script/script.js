@@ -8,7 +8,7 @@ let navbar = document.querySelector('#header');
 
 document.addEventListener('scroll', ()=>{
     let scrollTop = window.scrollY;
-
+      behavior: 'smooth'
     if(scrollTop > 1){
         navbar.classList.add('rolar');
     }else {
@@ -89,11 +89,11 @@ elements.forEach( (elements) => myObserver.observe(elements))
 // ==============================
   function exibirAlerta(event) {
     let email = document.getElementById('email')
-    let emailCadstro = email.value;
+    let emailCadastro = email.value;
     event.preventDefault(); 
     Swal.fire({
-      title: "Email enviado!",
-      text: "Aguarde o retorno de um de nossos vendedores no email: " +emailCadstro,
+      title: "Formulário enviado!",
+      text: `Em breve uma pessoa da nossa equipe entrara em contato com você através do email: ${emailCadastro} `,
       icon: "success"
     });
 
@@ -103,45 +103,11 @@ elements.forEach( (elements) => myObserver.observe(elements))
 // /Mensagem Cotação
 // ==============================
 
+//
 
-document.addEventListener('DOMContentLoaded', () => {
-  const imageList = document.getElementById('list');
-  const images = imageList.querySelectorAll('img');
-  const imageWidth = images[0].offsetWidth + 20; // inclui o gap
-  const totalImages = images.length;
-
-  // Clona as imagens
-  images.forEach(img => {
-    const clone = img.cloneNode(true);
-    imageList.appendChild(clone);
-  });
-
-  let currentIndex = 0;
-
-  function slideToNext() {
-    currentIndex++;
-
-    imageList.scrollTo({
-      left: currentIndex * imageWidth,
-      behavior: 'smooth'
-    });
-
-    // Quando passar da última imagem original, reseta
-    if (currentIndex >= totalImages) {
-      setTimeout(() => {
-        imageList.scrollTo({
-          left: 0,
-          behavior: 'auto'
-        });
-        currentIndex = 0;
-      }, 510); // espera a transição suave terminar
-    }
-  }
-
-  setInterval(slideToNext, 3000);
-});
-
-
+// ==============================
+// Caroussel empresas parceiras
+// ==============================
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.getElementById('sliderTrack');
   const images = Array.from(track.children);
@@ -171,3 +137,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   setInterval(slide, 3000);
 });
+// ==============================
+// /Caroussel empresas parceiras
+// ==============================

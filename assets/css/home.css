@@ -1,4 +1,7 @@
 
+body{
+    scroll-behavior: smooth
+}
 section.hero-site{
     background-image: url(../imgs/home.jpeg);
 }
